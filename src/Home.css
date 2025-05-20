@@ -70,6 +70,7 @@ h2.arxiv a {
   font-size: 1em;
   font-weight: 400;
   color: blue;
+  text-decoration: underline;
 }
 
 h3 {
@@ -305,6 +306,21 @@ h3 {
   }
 }
 
+.bibtex-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.bibtex-code {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
 
 /*=============================
 =      Responsive Design      =
