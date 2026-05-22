@@ -1,425 +1,942 @@
+
+Claude finished the response
+2505.12217v3.pdf
+pdf
+
+Can you please read this file and give me the webpage bro making it a beautiful one bro ookay
+
+12:29 AM
+
+Viewed a file, created a file, read a file
+Viewed a file, created a file, read a file
+Here's your beautiful HyperCap webpage! Here's what's packed in:
+
+Design choices:
+
+Dark deep-space theme with an animated grid, drifting color orbs, and subtle noise texture
+Syne (bold display) + DM Mono (body) + Instrument Serif (headings) — distinctive font trio
+Accent palette: neon green, violet, coral, and gold — each dataset gets its own color identity
+Sections:
+
+Hero — animated stat counters (21,237 captions, 4 datasets, 50 classes), glowing CTA buttons
+About — dual-column layout with quoted highlight and three contribution cards
+Datasets — four color-coded cards with specs for Botswana, Houston13, Indian Pines, and KSC
+Method — visual pipeline flow (HSI → Patching → LLM → Expert → HyperCap) + comparison table vs LDGNet
+Results — performance gain cards (+23%, +27%…) and a full classification results table with color-coded top scores
+Captions — before/after refinement showcase with all four examples from the paper
+Authors — full author grid with affiliations + funding note
+Footer — clean with arXiv and GitHub links
+Interactions: scroll-reveal animations, animated counters on load, hover effects on all cards, and a sticky nav.
+
+
+Hypercap
+Code · HTML 
+Make the webiste more simpler bro in the below the title itself add the Authors detailes bro and after thant bro abstract adn then the high points of the paper and then the referce bro 
+
+@article{das2025hyperspectral,
+  title={Hyperspectral image land cover captioning dataset for vision language models},
+  author={Das, Aryan and Rachamalla, Tanishq and Singh, Pravendra and Biswas, Koushik and Verma, Vinay Kumar and Roy, Swalpa Kumar},
+  journal={arXiv preprint arXiv:2505.12217},
+  year={2025}
+}
+ANd also mention liek the paper got ACCEPTED in the IEEE GRSM bro okay
+
+12:37 AM
+
+Architected streamlined academic webpage layout with paper details and acceptance status
+Architected streamlined academic webpage layout with paper details and acceptance status
+Here's the clean, academic-style page! Layout top to bottom:
+
+IEEE GRSM Accepted badge — green checkmark, prominent at the top
+Title — clean serif heading
+Authors — all 8 authors with equal-contribution note and corresponding author callout
+Affiliations — compact single-line with all institutions
+Links row — Paper, GitHub, Dataset chips
+Abstract — full text, justified, readable
+Stats strip — 4 key numbers at a glance
+Highlights — 6 numbered takeaways covering the main contributions, results, ablations, and new tasks
+Citation — BibTeX block with a one-click Copy button
+Footer — journal + arXiv reference
+
+Hypercap
+Code · HTML 
+I guess the wepage is no that great bro may be take some help form the 21st dev or something bro
+
+12:46 AM
+
+Re-reading frontend design skill for inspiration
+Re-reading frontend design skill for inspiration
+Now let me build something truly stunning — editorial magazine meets scientific paper, with rich visual depth.
+
+
+Ran a command, read a file
+Ran a command, read a file
+Here's the proper upgrade bro! Here's what makes it hit different this time:
+
+Design direction — Editorial academic, like Distill.pub meets a high-end journal:
+
+Playfair Display for the title (that classic serif editorial weight) + Outfit for body + Fira Code for monospace
+Warm paper-toned background (
+#f7f4ee) with grain texture overlay — feels like a printed journal
+Decorative spectral color bands in the hero corner (thematic to HSI!)
+Blue + cream + green color palette — clean, purposeful, nothing gratuitous
+Structure exactly as you asked:
+
+Top strip — journal name + arXiv + GitHub always visible
+IEEE GRSM Accepted badge — prominent green pill
+Title — big italic serif
+Authors with numbered affiliations + corresponding author markers
+Affiliations row — compact, numbered
+Stats bar — animated counter for 21,237
+Abstract — justified body text
+6 Key Highlights — tagged (New Dataset / Method / Result) with context
+BibTeX citation — one-click copy button
+Sidebar — TOC, arXiv card, dataset breakdown, funding
+
+Hypercap
+Code · HTML 
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+
+
+raw
+Hypercap · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HyperCap — IEEE GRSM</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>HyperCap — IEEE GRSM 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --bg: #fafaf8;
-  --text: #1a1a1a;
-  --muted: #666;
-  --light: #999;
-  --border: #e0e0d8;
-  --accent: #1a5f9e;
-  --accent-light: #eef4fb;
-  --green: #1a7a4a;
-  --green-light: #edf7f2;
-  --page: 760px;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+ 
+:root{
+  --ink:#0f0f0f;
+  --paper:#f7f4ee;
+  --paper2:#f0ece2;
+  --cream:#e8e3d6;
+  --rule:#c8c0ae;
+  --muted:#7a7060;
+  --faint:#b8b0a0;
+  --blue:#1648a0;
+  --blue-pale:#e8edf8;
+  --green:#156b3e;
+  --green-pale:#e5f2eb;
+  --red:#b83232;
+  --gold:#c8860a;
 }
-
-html { scroll-behavior: smooth; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 17px;
-  line-height: 1.75;
-  padding: 0 1rem;
+ 
+html{scroll-behavior:smooth}
+ 
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Outfit',sans-serif;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
 }
-
-/* ── Page container ── */
-.page {
-  max-width: var(--page);
-  margin: 0 auto;
-  padding: 3.5rem 0 6rem;
+ 
+/* ─── GRAIN OVERLAY ─── */
+body::after{
+  content:'';
+  position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23g)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9000;
 }
-
-/* ── Venue badge ── */
-.venue-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--green-light);
-  border: 1px solid #a8d9be;
-  color: var(--green);
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 5px 14px;
-  border-radius: 3px;
-  margin-bottom: 2rem;
+ 
+/* ─── LAYOUT ─── */
+.wrap{max-width:900px;margin:0 auto;padding:0 2rem}
+ 
+/* ─── TOP STRIP ─── */
+.top-strip{
+  background:var(--blue);
+  color:#fff;
+  font-size:11.5px;
+  font-weight:500;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:9px 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:2rem;
 }
-.venue-badge::before {
-  content: '✓';
-  font-size: 10px;
-  background: var(--green);
-  color: white;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+.top-strip a{color:rgba(255,255,255,0.75);text-decoration:none;transition:color .15s}
+.top-strip a:hover{color:#fff}
+.top-strip .dot{opacity:0.35}
+ 
+/* ─── HERO ─── */
+.hero{
+  padding:4rem 0 0;
+  position:relative;
+  overflow:hidden;
 }
-
-/* ── Title ── */
-h1 {
-  font-family: 'Source Serif 4', serif;
-  font-weight: 600;
-  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  margin-bottom: 2rem;
+ 
+/* Decorative spectral bands background */
+.hero-spectrum{
+  position:absolute;
+  top:0;right:0;bottom:0;
+  width:320px;
+  display:flex;
+  flex-direction:column;
+  pointer-events:none;
+  opacity:0.12;
 }
-
-/* ── Authors ── */
-.authors {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 15px;
-  color: var(--text);
-  margin-bottom: 0.5rem;
-  line-height: 1.8;
+.band{flex:1}
+ 
+.accepted-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--green-pale);
+  border:1.5px solid #8ecba9;
+  color:var(--green);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  padding:5px 14px 5px 10px;
+  border-radius:100px;
+  margin-bottom:1.8rem;
+  animation:fadeSlideUp .5s ease both;
 }
-.authors span {
-  font-weight: 600;
+.accepted-pill .check{
+  background:var(--green);
+  color:#fff;
+  width:18px;height:18px;
+  border-radius:50%;
+  font-size:10px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
 }
-.authors-note {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 13px;
-  color: var(--muted);
-  font-style: italic;
-  margin-bottom: 0.75rem;
+ 
+.hero h1{
+  font-family:'Playfair Display',Georgia,serif;
+  font-weight:900;
+  font-size:clamp(2rem,4.5vw,3.4rem);
+  line-height:1.12;
+  letter-spacing:-0.02em;
+  max-width:820px;
+  margin-bottom:2.5rem;
+  animation:fadeSlideUp .6s .05s ease both;
 }
-
-/* ── Affiliations ── */
-.affiliations {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.9;
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-  border-left: 2px solid var(--border);
+.hero h1 em{
+  font-style:italic;
+  color:var(--blue);
 }
-
-/* ── Links row ── */
-.links-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-bottom: 2.5rem;
+ 
+/* ─── AUTHORS BLOCK ─── */
+.authors-block{
+  border-top:2px solid var(--ink);
+  border-bottom:1px solid var(--rule);
+  padding:1.4rem 0;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:2rem;
+  align-items:center;
+  margin-bottom:0;
+  animation:fadeSlideUp .6s .1s ease both;
 }
-.link-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  padding: 6px 14px;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 1px solid var(--border);
-  color: var(--accent);
-  background: var(--accent-light);
-  transition: background 0.15s, border-color 0.15s;
+.author-names{
+  font-size:14.5px;
+  font-weight:400;
+  color:var(--ink);
+  line-height:1.9;
 }
-.link-chip:hover {
-  background: #ddeaf6;
-  border-color: #9abdd8;
+.author-names b{font-weight:600}
+.author-names sup{
+  font-size:9px;
+  color:var(--muted);
+  vertical-align:super;
+  margin-left:1px;
 }
-
-/* ── Divider ── */
-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 2.5rem 0;
+.equal-note{
+  font-size:11.5px;
+  color:var(--muted);
+  margin-top:.3rem;
 }
-
-/* ── Section headings ── */
-h2 {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 600;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 1rem;
+ 
+.links-col{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+  flex-shrink:0;
 }
-
-/* ── Abstract ── */
-.abstract-text {
-  font-size: 16px;
-  color: #2a2a2a;
-  text-align: justify;
-  hyphens: auto;
+.lnk{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.04em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:7px 16px;
+  border-radius:3px;
+  transition:all .15s;
+  white-space:nowrap;
 }
-
-/* ── Highlights ── */
-.highlights {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 0.5rem;
+.lnk-paper{background:var(--ink);color:#fff}
+.lnk-paper:hover{background:#333}
+.lnk-code{background:var(--blue-pale);color:var(--blue);border:1px solid #b8caeb}
+.lnk-code:hover{background:#d8e4f4}
+ 
+/* ─── AFFILS ─── */
+.affils-row{
+  background:var(--paper2);
+  border-bottom:1px solid var(--rule);
+  padding:.9rem 0;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:400;
+  letter-spacing:.01em;
+  animation:fadeSlideUp .6s .15s ease both;
 }
-
-.hl-item {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 1rem;
-  align-items: start;
-  padding: 1.1rem 1.25rem;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+.affils-inner{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.3rem 1.5rem;
+  max-width:900px;
+  margin:0 auto;
+  padding:0 2rem;
 }
-
-.hl-num {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  color: var(--accent);
-  margin-top: 1px;
-  line-height: 1.75;
+.affil-item{display:flex;align-items:center;gap:5px}
+.affil-num{
+  font-weight:700;
+  color:var(--blue);
+  font-size:10px;
 }
-
-.hl-text {
-  font-size: 15.5px;
-  color: var(--text);
-  line-height: 1.7;
+ 
+/* ─── STATS BAR ─── */
+.stats-bar{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-bottom:1px solid var(--rule);
+  animation:fadeSlideUp .6s .2s ease both;
 }
-.hl-text strong {
-  font-weight: 600;
-  color: var(--text);
+.sc{
+  padding:1.6rem 1rem 1.4rem;
+  text-align:center;
+  border-right:1px solid var(--rule);
+  position:relative;
 }
-
-/* ── Stats strip ── */
-.stats-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
-  margin: 1.5rem 0;
+.sc:last-child{border-right:none}
+.sc-n{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:2rem;
+  color:var(--blue);
+  display:block;
+  line-height:1;
+  margin-bottom:4px;
 }
-.stat-cell {
-  background: white;
-  text-align: center;
-  padding: 1.1rem 0.5rem;
+.sc-l{
+  font-size:10.5px;
+  font-weight:500;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.08em;
 }
-.stat-n {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: var(--accent);
-  display: block;
-  line-height: 1.1;
-  margin-bottom: 2px;
+ 
+/* ─── MAIN BODY ─── */
+.body-grid{
+  display:grid;
+  grid-template-columns:1fr 260px;
+  gap:0;
+  align-items:start;
+  max-width:900px;
+  margin:0 auto;
+  padding:0 2rem;
 }
-.stat-l {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+ 
+.main-col{
+  padding:3rem 3rem 4rem 0;
+  border-right:1px solid var(--rule);
 }
-
-/* ── Citation ── */
-.citation-block {
-  background: #f4f4f0;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 1.25rem 1.5rem;
-  position: relative;
+ 
+.side-col{
+  padding:3rem 0 4rem 2.5rem;
+  position:sticky;
+  top:2rem;
+  align-self:start;
 }
-.citation-block pre {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12.5px;
-  line-height: 1.7;
-  color: #333;
-  white-space: pre-wrap;
-  word-break: break-word;
+ 
+/* ─── SECTION ─── */
+.sec{margin-bottom:3rem}
+ 
+.sec-label{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--blue);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:.9rem;
 }
-.copy-btn {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  padding: 4px 10px;
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  background: white;
-  color: var(--muted);
-  cursor: pointer;
-  transition: all 0.15s;
+.sec-label::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:var(--rule);
 }
-.copy-btn:hover { background: var(--accent-light); color: var(--accent); border-color: #9abdd8; }
-
-/* ── Footer ── */
-.footer-note {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12.5px;
-  color: var(--light);
-  text-align: center;
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
+ 
+.sec h2{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:1.45rem;
+  margin-bottom:1rem;
+  letter-spacing:-.01em;
 }
-
-@media (max-width: 600px) {
-  body { font-size: 16px; }
-  h1 { font-size: 1.5rem; }
-  .stats-strip { grid-template-columns: repeat(2, 1fr); }
-  .hl-item { grid-template-columns: 20px 1fr; gap: 0.75rem; }
+ 
+p.body-text{
+  font-size:15px;
+  color:#2a2520;
+  line-height:1.8;
+  text-align:justify;
+  hyphens:auto;
+}
+ 
+/* ─── HIGHLIGHTS ─── */
+.hl-list{display:flex;flex-direction:column;gap:.85rem}
+ 
+.hl{
+  display:grid;
+  grid-template-columns:36px 1fr;
+  gap:.9rem;
+  padding:1.1rem 1.2rem;
+  background:#fff;
+  border:1px solid var(--cream);
+  border-radius:3px;
+  transition:border-color .2s, box-shadow .2s;
+}
+.hl:hover{
+  border-color:#b8caeb;
+  box-shadow:0 4px 20px rgba(22,72,160,.06);
+}
+ 
+.hl-idx{
+  font-family:'Playfair Display',serif;
+  font-weight:700;
+  font-size:1.3rem;
+  color:var(--cream);
+  line-height:1;
+  margin-top:2px;
+}
+.hl-body{font-size:14px;line-height:1.75;color:#2a2520}
+.hl-body strong{color:var(--ink);font-weight:600}
+.hl-body .tag{
+  display:inline-block;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  padding:1px 7px;
+  border-radius:2px;
+  margin-right:6px;
+  vertical-align:middle;
+}
+.tag-new{background:var(--blue-pale);color:var(--blue)}
+.tag-result{background:#fef3e2;color:var(--gold)}
+.tag-method{background:var(--green-pale);color:var(--green)}
+ 
+/* ─── CITATION ─── */
+.cite-wrap{
+  background:var(--paper2);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  overflow:hidden;
+}
+.cite-header{
+  padding:.6rem 1rem;
+  background:var(--cream);
+  border-bottom:1px solid var(--rule);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.cite-header span{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.copy-btn{
+  font-size:11px;
+  font-weight:600;
+  padding:4px 12px;
+  background:#fff;
+  border:1px solid var(--rule);
+  border-radius:2px;
+  cursor:pointer;
+  color:var(--muted);
+  font-family:'Outfit',sans-serif;
+  transition:all .15s;
+}
+.copy-btn:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.cite-body{
+  padding:1.1rem 1.2rem;
+  font-family:'Fira Code',monospace;
+  font-size:12px;
+  line-height:1.8;
+  color:#3a3020;
+  white-space:pre-wrap;
+  word-break:break-word;
+}
+ 
+/* ─── SIDEBAR ─── */
+.side-widget{
+  margin-bottom:2rem;
+}
+.side-label{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+  border-bottom:1px solid var(--rule);
+  padding-bottom:.5rem;
+  margin-bottom:.9rem;
+}
+ 
+.arxiv-card{
+  background:#fff;
+  border:1px solid var(--cream);
+  border-radius:3px;
+  padding:1rem 1rem 1.1rem;
+  font-size:13px;
+}
+.arxiv-card .id{
+  font-family:'Fira Code',monospace;
+  font-size:11px;
+  color:var(--blue);
+  margin-bottom:.4rem;
+  font-weight:500;
+}
+.arxiv-card .title{
+  font-family:'Playfair Display',serif;
+  font-size:.95rem;
+  font-weight:700;
+  line-height:1.3;
+  margin-bottom:.6rem;
+}
+.arxiv-card .meta{font-size:11.5px;color:var(--muted);line-height:1.6}
+ 
+.dataset-mini{
+  display:flex;
+  flex-direction:column;
+  gap:.5rem;
+}
+.dm-row{
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  font-size:13px;
+}
+.dm-color{
+  width:10px;height:10px;
+  border-radius:2px;
+  flex-shrink:0;
+}
+.dm-name{font-weight:600;flex:1;min-width:0}
+.dm-count{
+  font-family:'Fira Code',monospace;
+  font-size:11px;
+  color:var(--muted);
+}
+ 
+.toc{display:flex;flex-direction:column;gap:.35rem}
+.toc a{
+  font-size:13px;
+  color:var(--muted);
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  transition:color .15s;
+  padding:.15rem 0;
+}
+.toc a::before{
+  content:'';
+  width:12px;height:1px;
+  background:var(--rule);
+  flex-shrink:0;
+  transition:background .15s, width .15s;
+}
+.toc a:hover{color:var(--blue)}
+.toc a:hover::before{background:var(--blue);width:18px}
+ 
+/* ─── DIVIDER ─── */
+.rule{border:none;border-top:1px solid var(--rule);margin:2.5rem 0}
+ 
+/* ─── FOOTER ─── */
+footer{
+  background:var(--ink);
+  color:rgba(255,255,255,0.55);
+  padding:2.5rem 2rem;
+  font-size:12px;
+  text-align:center;
+  line-height:2;
+}
+footer strong{color:rgba(255,255,255,0.85)}
+footer a{color:rgba(255,255,255,0.55);text-decoration:none}
+footer a:hover{color:#fff}
+ 
+/* ─── ANIMATIONS ─── */
+@keyframes fadeSlideUp{
+  from{opacity:0;transform:translateY(16px)}
+  to{opacity:1;transform:none}
+}
+.reveal{
+  opacity:0;transform:translateY(18px);
+  transition:opacity .6s ease,transform .6s ease;
+}
+.reveal.on{opacity:1;transform:none}
+ 
+/* ─── RESPONSIVE ─── */
+@media(max-width:720px){
+  .body-grid{grid-template-columns:1fr}
+  .main-col{padding:2rem 0;border-right:none}
+  .side-col{padding:0 0 2rem;border-top:1px solid var(--rule);position:static}
+  .authors-block{grid-template-columns:1fr;gap:1rem}
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .sc:nth-child(2){border-right:none}
+  .hero-spectrum{display:none}
+  .links-col{flex-direction:row;flex-wrap:wrap}
 }
 </style>
 </head>
 <body>
-<div class="page">
-
-  <!-- Venue -->
-  <div class="venue-badge">Accepted · IEEE Geoscience and Remote Sensing Magazine (GRSM)</div>
-
-  <!-- Title -->
-  <h1>HyperCap: Hyperspectral Land Cover Captioning Dataset for Vision Language Models</h1>
-
-  <!-- Authors -->
-  <div class="authors">
-    <span>Aryan Das</span><sup>*</sup>,&ensp;
-    <span>Tanishq Rachamalla</span><sup>*</sup>,&ensp;
-    <span>Pravendra Singh</span>,&ensp;
-    <span>Koushik Biswas</span>,&ensp;
-    <span>Vinay Kumar Verma</span>,&ensp;
-    <span>Salvador Garcia</span>,&ensp;
-    <span>Antonio Plaza</span>,&ensp;
-    <span>Swalpa Kumar Roy</span>
-  </div>
-  <div class="authors-note">* Equal contribution &nbsp;·&nbsp; Corresponding authors: Antonio Plaza & Swalpa Kumar Roy</div>
-
-  <!-- Affiliations -->
-  <div class="affiliations">
-    VIT Bhopal &nbsp;·&nbsp; SAHE Vijayawada &nbsp;·&nbsp; IIT Roorkee &nbsp;·&nbsp; IIIT Delhi &nbsp;·&nbsp;
-    IIT Kanpur &nbsp;·&nbsp; University of Granada &nbsp;·&nbsp; University of Extremadura &nbsp;·&nbsp; Tezpur University
-  </div>
-
-  <!-- Links -->
-  <div class="links-row">
-    <a href="https://arxiv.org/abs/2505.12217" class="link-chip" target="_blank">📄 arXiv Paper</a>
-    <a href="https://github.com/arya-domain/HyperCap" class="link-chip" target="_blank">💻 GitHub / Code</a>
-    <a href="https://github.com/arya-domain/HyperCap" class="link-chip" target="_blank">🗂 Dataset</a>
-  </div>
-
-  <hr>
-
-  <!-- Abstract -->
-  <h2>Abstract</h2>
-  <p class="abstract-text">
-    We introduce HyperCap, the first large-scale hyperspectral captioning dataset designed to enhance model performance and effectiveness in remote sensing applications. Unlike traditional hyperspectral imaging (HSI) benchmarks, HyperCap integrates spectral data with pixel-wise textual annotations, enabling deeper semantic understanding. This dataset enhances model performance in tasks like classification and feature extraction, providing a valuable resource for advanced remote sensing applications. HyperCap is constructed from four benchmark datasets and annotated through a hybrid approach combining automated and manual methods to ensure accuracy and consistency. Empirical evaluations using state-of-the-art encoders and diverse fusion techniques demonstrate significant improvements in classification performance. These results underscore the potential of vision-language learning in HSI and position HyperCap as a foundational dataset for future research in the field.
-  </p>
-
-  <!-- Stats strip -->
-  <div class="stats-strip">
-    <div class="stat-cell"><span class="stat-n">21,237</span><span class="stat-l">Pixel-wise Captions</span></div>
-    <div class="stat-cell"><span class="stat-n">4</span><span class="stat-l">Benchmark Datasets</span></div>
-    <div class="stat-cell"><span class="stat-n">50</span><span class="stat-l">Land Cover Classes</span></div>
-    <div class="stat-cell"><span class="stat-n">+27%</span><span class="stat-l">Max OA Improvement</span></div>
-  </div>
-
-  <hr>
-
-  <!-- Highlights -->
-  <h2>Highlights</h2>
-  <div class="highlights">
-
-    <div class="hl-item">
-      <div class="hl-num">1</div>
-      <div class="hl-text">
-        <strong>First pixel-level HSI captioning dataset.</strong> HyperCap provides fine-grained, pixel-wise textual descriptions for four widely-used hyperspectral benchmarks — Botswana, Houston 2013, Indian Pines, and Kennedy Space Center — totaling 21,237 expert-refined captions. No prior dataset achieves this level of spectral–semantic granularity.
-      </div>
-    </div>
-
-    <div class="hl-item">
-      <div class="hl-num">2</div>
-      <div class="hl-text">
-        <strong>Hybrid annotation pipeline with expert quality control.</strong> Captions were generated in parallel by ChatGPT-4o and Mistral Large using a structured prompt, then reviewed and refined by three remote sensing experts. Constraints prohibited class-name use, functional language, and speculative content — ensuring physically grounded, class-leakage-free descriptions.
-      </div>
-    </div>
-
-    <div class="hl-item">
-      <div class="hl-num">3</div>
-      <div class="hl-text">
-        <strong>Large classification gains across architectures.</strong> Integrating HyperCap captions via text encoders (BERT-Large, T5) boosted overall accuracy by up to <strong>+27%</strong> on Kennedy Space Center (DBCTNet: 70.5% → 97.6%) and <strong>+23%</strong> on Indian Pines (DBCTNet: 76% → 99.4%). Even top-performing models like FAHM reached 100% OA with textual fusion.
-      </div>
-    </div>
-
-    <div class="hl-item">
-      <div class="hl-num">4</div>
-      <div class="hl-text">
-        <strong>Robust under severe data scarcity.</strong> With only 3% of labeled pixels for training, multimodal models fusing HyperCap captions maintained above 98% OA — while vision-only baselines dropped 4–5%. This demonstrates that caption-guided supervision provides unique resilience when ground-truth annotations are scarce.
-      </div>
-    </div>
-
-    <div class="hl-item">
-      <div class="hl-num">5</div>
-      <div class="hl-text">
-        <strong>No label leakage confirmed.</strong> Ablation studies on text-only versus multimodal inputs show consistent and substantial performance gaps, ruling out captions as hidden class-label proxies. Captions genuinely encode complementary spectral–spatial semantics rather than target-label information.
-      </div>
-    </div>
-
-    <div class="hl-item">
-      <div class="hl-num">6</div>
-      <div class="hl-text">
-        <strong>Enables new multimodal tasks in HSI.</strong> Beyond classification, HyperCap supports image captioning and image-text retrieval benchmarks. GIT and mPLUG emerge as leading captioners, while retrieval results (IR: ~62%, TR: ~70%) indicate significant headroom for domain-adapted HSI vision-language architectures.
-      </div>
-    </div>
-
-  </div>
-
-  <hr>
-
-  <!-- Citation -->
-  <h2>Citation</h2>
-  <div class="citation-block">
-    <button class="copy-btn" onclick="copyBib(this)">Copy</button>
-    <pre id="bib">@article{das2025hyperspectral,
-  title={Hyperspectral image land cover captioning dataset
-         for vision language models},
-  author={Das, Aryan and Rachamalla, Tanishq and
-          Singh, Pravendra and Biswas, Koushik and
-          Verma, Vinay Kumar and Roy, Swalpa Kumar},
-  journal={arXiv preprint arXiv:2505.12217},
-  year={2025}
-}</pre>
-  </div>
-
-  <div class="footer-note">
-    Published in <strong>IEEE Geoscience and Remote Sensing Magazine (GRSM)</strong> &nbsp;·&nbsp;
-    arXiv:2505.12217 &nbsp;·&nbsp; May 2026
-  </div>
-
+ 
+<!-- TOP BAR -->
+<div class="top-strip">
+  <span>IEEE Geoscience &amp; Remote Sensing Magazine</span>
+  <span class="dot">·</span>
+  <a href="https://arxiv.org/abs/2505.12217" target="_blank">arXiv:2505.12217</a>
+  <span class="dot">·</span>
+  <a href="https://github.com/arya-domain/HyperCap" target="_blank">github.com/arya-domain/HyperCap</a>
 </div>
-
+ 
+<!-- HERO -->
+<div class="hero">
+  <!-- Spectral bands decoration -->
+  <div class="hero-spectrum" aria-hidden="true">
+    <div class="band" style="background:#6b21a8"></div>
+    <div class="band" style="background:#1d4ed8"></div>
+    <div class="band" style="background:#0891b2"></div>
+    <div class="band" style="background:#059669"></div>
+    <div class="band" style="background:#65a30d"></div>
+    <div class="band" style="background:#ca8a04"></div>
+    <div class="band" style="background:#ea580c"></div>
+    <div class="band" style="background:#dc2626"></div>
+  </div>
+ 
+  <div class="wrap">
+    <div class="accepted-pill">
+      <span class="check">✓</span>
+      Accepted · IEEE Geoscience and Remote Sensing Magazine
+    </div>
+ 
+    <h1>
+      <em>HyperCap:</em> Hyperspectral Land Cover<br>Captioning Dataset for Vision Language Models
+    </h1>
+  </div>
+</div>
+ 
+<!-- AUTHORS -->
+<div class="wrap">
+  <div class="authors-block">
+    <div>
+      <div class="author-names">
+        <b>Aryan Das</b><sup>*,1</sup>,&ensp;
+        <b>Tanishq Rachamalla</b><sup>*,2</sup>,&ensp;
+        <b>Pravendra Singh</b><sup>3</sup>,&ensp;
+        <b>Koushik Biswas</b><sup>4</sup>,&ensp;
+        <b>Vinay Kumar Verma</b><sup>5</sup>,&ensp;
+        <b>Salvador Garcia</b><sup>6</sup>,&ensp;
+        <b>Antonio Plaza</b><sup>†,7</sup>,&ensp;
+        <b>Swalpa Kumar Roy</b><sup>†,8</sup>
+      </div>
+      <div class="equal-note">* Equal contribution &nbsp;·&nbsp; † Corresponding authors</div>
+    </div>
+    <div class="links-col">
+      <a href="https://arxiv.org/abs/2505.12217" class="lnk lnk-paper" target="_blank">
+        📄 Paper
+      </a>
+      <a href="https://github.com/arya-domain/HyperCap" class="lnk lnk-code" target="_blank">
+        💻 Code &amp; Dataset
+      </a>
+    </div>
+  </div>
+</div>
+ 
+<!-- AFFILIATIONS -->
+<div class="affils-row">
+  <div class="affils-inner">
+    <span class="affil-item"><span class="affil-num">1</span>VIT Bhopal, India</span>
+    <span class="affil-item"><span class="affil-num">2</span>SAHE Vijayawada, India</span>
+    <span class="affil-item"><span class="affil-num">3</span>IIT Roorkee, India</span>
+    <span class="affil-item"><span class="affil-num">4</span>IIIT Delhi, India</span>
+    <span class="affil-item"><span class="affil-num">5</span>IIT Kanpur, India</span>
+    <span class="affil-item"><span class="affil-num">6</span>University of Granada, Spain</span>
+    <span class="affil-item"><span class="affil-num">7</span>University of Extremadura, Spain</span>
+    <span class="affil-item"><span class="affil-num">8</span>Tezpur University, India</span>
+  </div>
+</div>
+ 
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="sc">
+    <span class="sc-n" data-count="21237">0</span>
+    <span class="sc-l">Pixel-wise Captions</span>
+  </div>
+  <div class="sc">
+    <span class="sc-n" data-count="4">4</span>
+    <span class="sc-l">Benchmark Datasets</span>
+  </div>
+  <div class="sc">
+    <span class="sc-n" data-count="50">50</span>
+    <span class="sc-l">Land Cover Classes</span>
+  </div>
+  <div class="sc">
+    <span class="sc-n">+27%</span>
+    <span class="sc-l">Max OA Improvement</span>
+  </div>
+</div>
+ 
+<!-- MAIN GRID -->
+<div class="body-grid">
+ 
+  <!-- ── MAIN COLUMN ── -->
+  <main class="main-col">
+ 
+    <!-- Abstract -->
+    <section class="sec reveal" id="abstract">
+      <div class="sec-label">Abstract</div>
+      <p class="body-text">
+        We introduce <strong>HyperCap</strong>, the first large-scale hyperspectral captioning dataset designed to enhance model performance and effectiveness in remote sensing applications. Unlike traditional hyperspectral imaging (HSI) benchmarks, HyperCap integrates spectral data with pixel-wise textual annotations, enabling deeper semantic understanding. This dataset enhances model performance in tasks like classification and feature extraction, providing a valuable resource for advanced remote sensing applications. HyperCap is constructed from four benchmark datasets — Botswana, Houston 2013, Indian Pines, and Kennedy Space Center — and annotated through a hybrid approach combining automated and manual methods to ensure accuracy and consistency. Empirical evaluations using state-of-the-art encoders and diverse fusion techniques demonstrate significant improvements in classification performance. These results underscore the potential of vision-language learning in HSI and position HyperCap as a foundational dataset for future research in the field.
+      </p>
+    </section>
+ 
+    <hr class="rule">
+ 
+    <!-- Highlights -->
+    <section class="sec reveal" id="highlights">
+      <div class="sec-label">Key Highlights</div>
+ 
+      <div class="hl-list">
+ 
+        <div class="hl">
+          <div class="hl-idx">1</div>
+          <div class="hl-body">
+            <span class="tag tag-new">New Dataset</span><br>
+            <strong>First pixel-level HSI captioning benchmark.</strong>
+            HyperCap provides one expert-refined caption per labeled pixel across all four datasets, totaling 21,237 annotations. Prior datasets like LDGNet offered only 2 template captions per class at patch level — HyperCap delivers orders-of-magnitude more granular and diverse descriptions.
+          </div>
+        </div>
+ 
+        <div class="hl">
+          <div class="hl-idx">2</div>
+          <div class="hl-body">
+            <span class="tag tag-method">Method</span><br>
+            <strong>Dual-LLM + expert refinement pipeline.</strong>
+            ChatGPT-4o and Mistral Large generate candidate captions in parallel for every labeled pixel. Three remote sensing experts then select and refine the most spectrally grounded output, with strict constraints: no class names, no functional language, no hallucinated world knowledge.
+          </div>
+        </div>
+ 
+        <div class="hl">
+          <div class="hl-idx">3</div>
+          <div class="hl-body">
+            <span class="tag tag-result">Result</span><br>
+            <strong>Massive classification accuracy gains.</strong>
+            Fusing HyperCap captions via BERT/T5 text encoders boosts overall accuracy by up to <strong>+27%</strong> on KSC (70.5→97.6%) and <strong>+23%</strong> on Indian Pines (76→99.4%) for DBCTNet. Even already-strong models like FAHM and 3D-ConvSST achieve 100% OA on Botswana with textual fusion.
+          </div>
+        </div>
+ 
+        <div class="hl">
+          <div class="hl-idx">4</div>
+          <div class="hl-body">
+            <span class="tag tag-result">Result</span><br>
+            <strong>Resilient under extreme data scarcity.</strong>
+            With just <strong>3% of training labels</strong>, multimodal models using HyperCap captions stay above 98% OA — while vision-only baselines drop 4–5%. Caption supervision compensates for label scarcity in a way that spectral features alone cannot.
+          </div>
+        </div>
+ 
+        <div class="hl">
+          <div class="hl-idx">5</div>
+          <div class="hl-body">
+            <span class="tag tag-method">Analysis</span><br>
+            <strong>No label leakage — captions are semantically additive.</strong>
+            Ablation under text-only and image-only inputs shows consistent large performance gaps versus multimodal fusion, confirming captions encode complementary spectral–spatial semantics rather than hidden class-label signals. Text-only models score 15–29% below multimodal.
+          </div>
+        </div>
+ 
+        <div class="hl">
+          <div class="hl-idx">6</div>
+          <div class="hl-body">
+            <span class="tag tag-new">Task</span><br>
+            <strong>New multimodal tasks opened for HSI.</strong>
+            Beyond classification, HyperCap enables image captioning benchmarks (GIT leads with BLEU-1: 0.43) and cross-modal retrieval (IR ~62%, TR ~70%), revealing significant headroom and motivating domain-adapted HSI vision-language architectures.
+          </div>
+        </div>
+ 
+      </div>
+    </section>
+ 
+    <hr class="rule">
+ 
+    <!-- Citation -->
+    <section class="sec reveal" id="citation">
+      <div class="sec-label">Citation</div>
+      <div class="cite-wrap">
+        <div class="cite-header">
+          <span>BibTeX</span>
+          <button class="copy-btn" onclick="copyCite(this)">Copy</button>
+        </div>
+        <div class="cite-body" id="bibtex">@article{das2025hyperspectral,
+  title   = {Hyperspectral image land cover captioning
+             dataset for vision language models},
+  author  = {Das, Aryan and Rachamalla, Tanishq and
+             Singh, Pravendra and Biswas, Koushik and
+             Verma, Vinay Kumar and Roy, Swalpa Kumar},
+  journal = {arXiv preprint arXiv:2505.12217},
+  year    = {2025}
+}</div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- ── SIDEBAR ── -->
+  <aside class="side-col">
+ 
+    <!-- TOC -->
+    <div class="side-widget reveal">
+      <div class="side-label">Contents</div>
+      <nav class="toc">
+        <a href="#abstract">Abstract</a>
+        <a href="#highlights">Key Highlights</a>
+        <a href="#citation">Citation</a>
+      </nav>
+    </div>
+ 
+    <!-- arXiv card -->
+    <div class="side-widget reveal">
+      <div class="side-label">Preprint</div>
+      <div class="arxiv-card">
+        <div class="id">arXiv · 2505.12217v3</div>
+        <div class="title">HyperCap: Hyperspectral Land Cover Captioning Dataset</div>
+        <div class="meta">
+          cs.CV &nbsp;·&nbsp; Submitted May 2025<br>
+          Accepted: <strong style="color:var(--green)">IEEE GRSM</strong>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Datasets -->
+    <div class="side-widget reveal">
+      <div class="side-label">Datasets Covered</div>
+      <div class="dataset-mini">
+        <div class="dm-row">
+          <div class="dm-color" style="background:#1648a0"></div>
+          <span class="dm-name">Indian Pines</span>
+          <span class="dm-count">10,248</span>
+        </div>
+        <div class="dm-row">
+          <div class="dm-color" style="background:#156b3e"></div>
+          <span class="dm-name">Kennedy Space Ctr.</span>
+          <span class="dm-count">5,211</span>
+        </div>
+        <div class="dm-row">
+          <div class="dm-color" style="background:#b83232"></div>
+          <span class="dm-name">Botswana</span>
+          <span class="dm-count">3,248</span>
+        </div>
+        <div class="dm-row">
+          <div class="dm-color" style="background:#c8860a"></div>
+          <span class="dm-name">Houston 2013</span>
+          <span class="dm-count">2,530</span>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Funding -->
+    <div class="side-widget reveal">
+      <div class="side-label">Funding</div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">
+        Consejería de Economía, Ciencia y Agenda Digital · Junta de Extremadura &amp; European Regional Development Fund (ERDF) · Grant GR24035
+      </p>
+    </div>
+ 
+  </aside>
+</div>
+ 
+<!-- FOOTER -->
+<footer>
+  <strong>HyperCap</strong> · Hyperspectral Land Cover Captioning Dataset<br>
+  Accepted in <strong>IEEE Geoscience and Remote Sensing Magazine (GRSM)</strong> &nbsp;·&nbsp;
+  <a href="https://arxiv.org/abs/2505.12217" target="_blank">arXiv:2505.12217</a> &nbsp;·&nbsp;
+  <a href="https://github.com/arya-domain/HyperCap" target="_blank">GitHub</a>
+</footer>
+ 
 <script>
-function copyBib(btn) {
-  const text = document.getElementById('bib').textContent;
+// Copy BibTeX
+function copyCite(btn) {
+  const text = document.getElementById('bibtex').textContent;
   navigator.clipboard.writeText(text).then(() => {
-    btn.textContent = 'Copied!';
+    btn.textContent = '✓ Copied';
     setTimeout(() => btn.textContent = 'Copy', 2000);
   });
 }
+ 
+// Animated counters
+function animCount(el, target, dur) {
+  let start = null;
+  const fmt = n => n >= 1000 ? n.toLocaleString() : String(n);
+  function step(ts) {
+    if (!start) start = ts;
+    const p = Math.min((ts - start) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = fmt(Math.round(ease * target));
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+ 
+const counters = document.querySelectorAll('[data-count]');
+const cObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animCount(e.target, +e.target.dataset.count, 1400);
+      cObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(el => cObs.observe(el));
+ 
+// Scroll reveal
+const revEls = document.querySelectorAll('.reveal');
+const rObs = new IntersectionObserver(entries => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      e.target.style.transitionDelay = (i % 3) * 0.07 + 's';
+      e.target.classList.add('on');
+      rObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+revEls.forEach(el => rObs.observe(el));
 </script>
 </body>
 </html>
+ 
+
