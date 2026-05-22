@@ -1,110 +1,3 @@
-
-Claude finished the response
-2505.12217v3.pdf
-pdf
-
-Can you please read this file and give me the webpage bro making it a beautiful one bro ookay
-
-12:29 AM
-
-Viewed a file, created a file, read a file
-Viewed a file, created a file, read a file
-Here's your beautiful HyperCap webpage! Here's what's packed in:
-
-Design choices:
-
-Dark deep-space theme with an animated grid, drifting color orbs, and subtle noise texture
-Syne (bold display) + DM Mono (body) + Instrument Serif (headings) — distinctive font trio
-Accent palette: neon green, violet, coral, and gold — each dataset gets its own color identity
-Sections:
-
-Hero — animated stat counters (21,237 captions, 4 datasets, 50 classes), glowing CTA buttons
-About — dual-column layout with quoted highlight and three contribution cards
-Datasets — four color-coded cards with specs for Botswana, Houston13, Indian Pines, and KSC
-Method — visual pipeline flow (HSI → Patching → LLM → Expert → HyperCap) + comparison table vs LDGNet
-Results — performance gain cards (+23%, +27%…) and a full classification results table with color-coded top scores
-Captions — before/after refinement showcase with all four examples from the paper
-Authors — full author grid with affiliations + funding note
-Footer — clean with arXiv and GitHub links
-Interactions: scroll-reveal animations, animated counters on load, hover effects on all cards, and a sticky nav.
-
-
-Hypercap
-Code · HTML 
-Make the webiste more simpler bro in the below the title itself add the Authors detailes bro and after thant bro abstract adn then the high points of the paper and then the referce bro 
-
-@article{das2025hyperspectral,
-  title={Hyperspectral image land cover captioning dataset for vision language models},
-  author={Das, Aryan and Rachamalla, Tanishq and Singh, Pravendra and Biswas, Koushik and Verma, Vinay Kumar and Roy, Swalpa Kumar},
-  journal={arXiv preprint arXiv:2505.12217},
-  year={2025}
-}
-ANd also mention liek the paper got ACCEPTED in the IEEE GRSM bro okay
-
-12:37 AM
-
-Architected streamlined academic webpage layout with paper details and acceptance status
-Architected streamlined academic webpage layout with paper details and acceptance status
-Here's the clean, academic-style page! Layout top to bottom:
-
-IEEE GRSM Accepted badge — green checkmark, prominent at the top
-Title — clean serif heading
-Authors — all 8 authors with equal-contribution note and corresponding author callout
-Affiliations — compact single-line with all institutions
-Links row — Paper, GitHub, Dataset chips
-Abstract — full text, justified, readable
-Stats strip — 4 key numbers at a glance
-Highlights — 6 numbered takeaways covering the main contributions, results, ablations, and new tasks
-Citation — BibTeX block with a one-click Copy button
-Footer — journal + arXiv reference
-
-Hypercap
-Code · HTML 
-I guess the wepage is no that great bro may be take some help form the 21st dev or something bro
-
-12:46 AM
-
-Re-reading frontend design skill for inspiration
-Re-reading frontend design skill for inspiration
-Now let me build something truly stunning — editorial magazine meets scientific paper, with rich visual depth.
-
-
-Ran a command, read a file
-Ran a command, read a file
-Here's the proper upgrade bro! Here's what makes it hit different this time:
-
-Design direction — Editorial academic, like Distill.pub meets a high-end journal:
-
-Playfair Display for the title (that classic serif editorial weight) + Outfit for body + Fira Code for monospace
-Warm paper-toned background (
-#f7f4ee) with grain texture overlay — feels like a printed journal
-Decorative spectral color bands in the hero corner (thematic to HSI!)
-Blue + cream + green color palette — clean, purposeful, nothing gratuitous
-Structure exactly as you asked:
-
-Top strip — journal name + arXiv + GitHub always visible
-IEEE GRSM Accepted badge — prominent green pill
-Title — big italic serif
-Authors with numbered affiliations + corresponding author markers
-Affiliations row — compact, numbered
-Stats bar — animated counter for 21,237
-Abstract — justified body text
-6 Key Highlights — tagged (New Dataset / Method / Result) with context
-BibTeX citation — one-click copy button
-Sidebar — TOC, arXiv card, dataset breakdown, funding
-
-Hypercap
-Code · HTML 
-
-
-
-
-
-Claude is AI and can make mistakes. Please double-check responses.
-
-
-raw
-Hypercap · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,7 +8,7 @@ Hypercap · HTML
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
- 
+
 :root{
   --ink:#0f0f0f;
   --paper:#f7f4ee;
@@ -131,9 +24,9 @@ Hypercap · HTML
   --red:#b83232;
   --gold:#c8860a;
 }
- 
+
 html{scroll-behavior:smooth}
- 
+
 body{
   background:var(--paper);
   color:var(--ink);
@@ -142,7 +35,7 @@ body{
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
 }
- 
+
 /* ─── GRAIN OVERLAY ─── */
 body::after{
   content:'';
@@ -150,10 +43,10 @@ body::after{
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23g)' opacity='0.035'/%3E%3C/svg%3E");
   pointer-events:none;z-index:9000;
 }
- 
+
 /* ─── LAYOUT ─── */
 .wrap{max-width:900px;margin:0 auto;padding:0 2rem}
- 
+
 /* ─── TOP STRIP ─── */
 .top-strip{
   background:var(--blue);
@@ -171,14 +64,14 @@ body::after{
 .top-strip a{color:rgba(255,255,255,0.75);text-decoration:none;transition:color .15s}
 .top-strip a:hover{color:#fff}
 .top-strip .dot{opacity:0.35}
- 
+
 /* ─── HERO ─── */
 .hero{
   padding:4rem 0 0;
   position:relative;
   overflow:hidden;
 }
- 
+
 /* Decorative spectral bands background */
 .hero-spectrum{
   position:absolute;
@@ -190,7 +83,7 @@ body::after{
   opacity:0.12;
 }
 .band{flex:1}
- 
+
 .accepted-pill{
   display:inline-flex;
   align-items:center;
@@ -216,7 +109,7 @@ body::after{
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
 }
- 
+
 .hero h1{
   font-family:'Playfair Display',Georgia,serif;
   font-weight:900;
@@ -231,7 +124,7 @@ body::after{
   font-style:italic;
   color:var(--blue);
 }
- 
+
 /* ─── AUTHORS BLOCK ─── */
 .authors-block{
   border-top:2px solid var(--ink);
@@ -262,7 +155,7 @@ body::after{
   color:var(--muted);
   margin-top:.3rem;
 }
- 
+
 .links-col{
   display:flex;
   flex-direction:column;
@@ -287,7 +180,7 @@ body::after{
 .lnk-paper:hover{background:#333}
 .lnk-code{background:var(--blue-pale);color:var(--blue);border:1px solid #b8caeb}
 .lnk-code:hover{background:#d8e4f4}
- 
+
 /* ─── AFFILS ─── */
 .affils-row{
   background:var(--paper2);
@@ -313,7 +206,7 @@ body::after{
   color:var(--blue);
   font-size:10px;
 }
- 
+
 /* ─── STATS BAR ─── */
 .stats-bar{
   display:grid;
@@ -344,7 +237,7 @@ body::after{
   text-transform:uppercase;
   letter-spacing:.08em;
 }
- 
+
 /* ─── MAIN BODY ─── */
 .body-grid{
   display:grid;
@@ -355,22 +248,22 @@ body::after{
   margin:0 auto;
   padding:0 2rem;
 }
- 
+
 .main-col{
   padding:3rem 3rem 4rem 0;
   border-right:1px solid var(--rule);
 }
- 
+
 .side-col{
   padding:3rem 0 4rem 2.5rem;
   position:sticky;
   top:2rem;
   align-self:start;
 }
- 
+
 /* ─── SECTION ─── */
 .sec{margin-bottom:3rem}
- 
+
 .sec-label{
   font-size:10px;
   font-weight:700;
@@ -388,7 +281,7 @@ body::after{
   height:1px;
   background:var(--rule);
 }
- 
+
 .sec h2{
   font-family:'Playfair Display',serif;
   font-weight:700;
@@ -396,7 +289,7 @@ body::after{
   margin-bottom:1rem;
   letter-spacing:-.01em;
 }
- 
+
 p.body-text{
   font-size:15px;
   color:#2a2520;
@@ -404,10 +297,10 @@ p.body-text{
   text-align:justify;
   hyphens:auto;
 }
- 
+
 /* ─── HIGHLIGHTS ─── */
 .hl-list{display:flex;flex-direction:column;gap:.85rem}
- 
+
 .hl{
   display:grid;
   grid-template-columns:36px 1fr;
@@ -422,7 +315,7 @@ p.body-text{
   border-color:#b8caeb;
   box-shadow:0 4px 20px rgba(22,72,160,.06);
 }
- 
+
 .hl-idx{
   font-family:'Playfair Display',serif;
   font-weight:700;
@@ -447,7 +340,7 @@ p.body-text{
 .tag-new{background:var(--blue-pale);color:var(--blue)}
 .tag-result{background:#fef3e2;color:var(--gold)}
 .tag-method{background:var(--green-pale);color:var(--green)}
- 
+
 /* ─── CITATION ─── */
 .cite-wrap{
   background:var(--paper2);
@@ -492,7 +385,7 @@ p.body-text{
   white-space:pre-wrap;
   word-break:break-word;
 }
- 
+
 /* ─── SIDEBAR ─── */
 .side-widget{
   margin-bottom:2rem;
@@ -507,7 +400,7 @@ p.body-text{
   padding-bottom:.5rem;
   margin-bottom:.9rem;
 }
- 
+
 .arxiv-card{
   background:#fff;
   border:1px solid var(--cream);
@@ -530,7 +423,7 @@ p.body-text{
   margin-bottom:.6rem;
 }
 .arxiv-card .meta{font-size:11.5px;color:var(--muted);line-height:1.6}
- 
+
 .dataset-mini{
   display:flex;
   flex-direction:column;
@@ -553,7 +446,7 @@ p.body-text{
   font-size:11px;
   color:var(--muted);
 }
- 
+
 .toc{display:flex;flex-direction:column;gap:.35rem}
 .toc a{
   font-size:13px;
@@ -574,10 +467,10 @@ p.body-text{
 }
 .toc a:hover{color:var(--blue)}
 .toc a:hover::before{background:var(--blue);width:18px}
- 
+
 /* ─── DIVIDER ─── */
 .rule{border:none;border-top:1px solid var(--rule);margin:2.5rem 0}
- 
+
 /* ─── FOOTER ─── */
 footer{
   background:var(--ink);
@@ -590,7 +483,7 @@ footer{
 footer strong{color:rgba(255,255,255,0.85)}
 footer a{color:rgba(255,255,255,0.55);text-decoration:none}
 footer a:hover{color:#fff}
- 
+
 /* ─── ANIMATIONS ─── */
 @keyframes fadeSlideUp{
   from{opacity:0;transform:translateY(16px)}
@@ -601,7 +494,7 @@ footer a:hover{color:#fff}
   transition:opacity .6s ease,transform .6s ease;
 }
 .reveal.on{opacity:1;transform:none}
- 
+
 /* ─── RESPONSIVE ─── */
 @media(max-width:720px){
   .body-grid{grid-template-columns:1fr}
@@ -616,7 +509,7 @@ footer a:hover{color:#fff}
 </style>
 </head>
 <body>
- 
+
 <!-- TOP BAR -->
 <div class="top-strip">
   <span>IEEE Geoscience &amp; Remote Sensing Magazine</span>
@@ -625,7 +518,7 @@ footer a:hover{color:#fff}
   <span class="dot">·</span>
   <a href="https://github.com/arya-domain/HyperCap" target="_blank">github.com/arya-domain/HyperCap</a>
 </div>
- 
+
 <!-- HERO -->
 <div class="hero">
   <!-- Spectral bands decoration -->
@@ -639,19 +532,19 @@ footer a:hover{color:#fff}
     <div class="band" style="background:#ea580c"></div>
     <div class="band" style="background:#dc2626"></div>
   </div>
- 
+
   <div class="wrap">
     <div class="accepted-pill">
       <span class="check">✓</span>
       Accepted · IEEE Geoscience and Remote Sensing Magazine
     </div>
- 
+
     <h1>
       <em>HyperCap:</em> Hyperspectral Land Cover<br>Captioning Dataset for Vision Language Models
     </h1>
   </div>
 </div>
- 
+
 <!-- AUTHORS -->
 <div class="wrap">
   <div class="authors-block">
@@ -678,7 +571,7 @@ footer a:hover{color:#fff}
     </div>
   </div>
 </div>
- 
+
 <!-- AFFILIATIONS -->
 <div class="affils-row">
   <div class="affils-inner">
@@ -692,7 +585,7 @@ footer a:hover{color:#fff}
     <span class="affil-item"><span class="affil-num">8</span>Tezpur University, India</span>
   </div>
 </div>
- 
+
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="sc">
@@ -712,13 +605,13 @@ footer a:hover{color:#fff}
     <span class="sc-l">Max OA Improvement</span>
   </div>
 </div>
- 
+
 <!-- MAIN GRID -->
 <div class="body-grid">
- 
+
   <!-- ── MAIN COLUMN ── -->
   <main class="main-col">
- 
+
     <!-- Abstract -->
     <section class="sec reveal" id="abstract">
       <div class="sec-label">Abstract</div>
@@ -726,15 +619,15 @@ footer a:hover{color:#fff}
         We introduce <strong>HyperCap</strong>, the first large-scale hyperspectral captioning dataset designed to enhance model performance and effectiveness in remote sensing applications. Unlike traditional hyperspectral imaging (HSI) benchmarks, HyperCap integrates spectral data with pixel-wise textual annotations, enabling deeper semantic understanding. This dataset enhances model performance in tasks like classification and feature extraction, providing a valuable resource for advanced remote sensing applications. HyperCap is constructed from four benchmark datasets — Botswana, Houston 2013, Indian Pines, and Kennedy Space Center — and annotated through a hybrid approach combining automated and manual methods to ensure accuracy and consistency. Empirical evaluations using state-of-the-art encoders and diverse fusion techniques demonstrate significant improvements in classification performance. These results underscore the potential of vision-language learning in HSI and position HyperCap as a foundational dataset for future research in the field.
       </p>
     </section>
- 
+
     <hr class="rule">
- 
+
     <!-- Highlights -->
     <section class="sec reveal" id="highlights">
       <div class="sec-label">Key Highlights</div>
- 
+
       <div class="hl-list">
- 
+
         <div class="hl">
           <div class="hl-idx">1</div>
           <div class="hl-body">
@@ -743,7 +636,7 @@ footer a:hover{color:#fff}
             HyperCap provides one expert-refined caption per labeled pixel across all four datasets, totaling 21,237 annotations. Prior datasets like LDGNet offered only 2 template captions per class at patch level — HyperCap delivers orders-of-magnitude more granular and diverse descriptions.
           </div>
         </div>
- 
+
         <div class="hl">
           <div class="hl-idx">2</div>
           <div class="hl-body">
@@ -752,7 +645,7 @@ footer a:hover{color:#fff}
             ChatGPT-4o and Mistral Large generate candidate captions in parallel for every labeled pixel. Three remote sensing experts then select and refine the most spectrally grounded output, with strict constraints: no class names, no functional language, no hallucinated world knowledge.
           </div>
         </div>
- 
+
         <div class="hl">
           <div class="hl-idx">3</div>
           <div class="hl-body">
@@ -761,7 +654,7 @@ footer a:hover{color:#fff}
             Fusing HyperCap captions via BERT/T5 text encoders boosts overall accuracy by up to <strong>+27%</strong> on KSC (70.5→97.6%) and <strong>+23%</strong> on Indian Pines (76→99.4%) for DBCTNet. Even already-strong models like FAHM and 3D-ConvSST achieve 100% OA on Botswana with textual fusion.
           </div>
         </div>
- 
+
         <div class="hl">
           <div class="hl-idx">4</div>
           <div class="hl-body">
@@ -770,7 +663,7 @@ footer a:hover{color:#fff}
             With just <strong>3% of training labels</strong>, multimodal models using HyperCap captions stay above 98% OA — while vision-only baselines drop 4–5%. Caption supervision compensates for label scarcity in a way that spectral features alone cannot.
           </div>
         </div>
- 
+
         <div class="hl">
           <div class="hl-idx">5</div>
           <div class="hl-body">
@@ -779,7 +672,7 @@ footer a:hover{color:#fff}
             Ablation under text-only and image-only inputs shows consistent large performance gaps versus multimodal fusion, confirming captions encode complementary spectral–spatial semantics rather than hidden class-label signals. Text-only models score 15–29% below multimodal.
           </div>
         </div>
- 
+
         <div class="hl">
           <div class="hl-idx">6</div>
           <div class="hl-body">
@@ -788,12 +681,12 @@ footer a:hover{color:#fff}
             Beyond classification, HyperCap enables image captioning benchmarks (GIT leads with BLEU-1: 0.43) and cross-modal retrieval (IR ~62%, TR ~70%), revealing significant headroom and motivating domain-adapted HSI vision-language architectures.
           </div>
         </div>
- 
+
       </div>
     </section>
- 
+
     <hr class="rule">
- 
+
     <!-- Citation -->
     <section class="sec reveal" id="citation">
       <div class="sec-label">Citation</div>
@@ -813,12 +706,12 @@ footer a:hover{color:#fff}
 }</div>
       </div>
     </section>
- 
+
   </main>
- 
+
   <!-- ── SIDEBAR ── -->
   <aside class="side-col">
- 
+
     <!-- TOC -->
     <div class="side-widget reveal">
       <div class="side-label">Contents</div>
@@ -828,7 +721,7 @@ footer a:hover{color:#fff}
         <a href="#citation">Citation</a>
       </nav>
     </div>
- 
+
     <!-- arXiv card -->
     <div class="side-widget reveal">
       <div class="side-label">Preprint</div>
@@ -841,7 +734,7 @@ footer a:hover{color:#fff}
         </div>
       </div>
     </div>
- 
+
     <!-- Datasets -->
     <div class="side-widget reveal">
       <div class="side-label">Datasets Covered</div>
@@ -868,7 +761,7 @@ footer a:hover{color:#fff}
         </div>
       </div>
     </div>
- 
+
     <!-- Funding -->
     <div class="side-widget reveal">
       <div class="side-label">Funding</div>
@@ -876,10 +769,10 @@ footer a:hover{color:#fff}
         Consejería de Economía, Ciencia y Agenda Digital · Junta de Extremadura &amp; European Regional Development Fund (ERDF) · Grant GR24035
       </p>
     </div>
- 
+
   </aside>
 </div>
- 
+
 <!-- FOOTER -->
 <footer>
   <strong>HyperCap</strong> · Hyperspectral Land Cover Captioning Dataset<br>
@@ -887,7 +780,7 @@ footer a:hover{color:#fff}
   <a href="https://arxiv.org/abs/2505.12217" target="_blank">arXiv:2505.12217</a> &nbsp;·&nbsp;
   <a href="https://github.com/arya-domain/HyperCap" target="_blank">GitHub</a>
 </footer>
- 
+
 <script>
 // Copy BibTeX
 function copyCite(btn) {
@@ -897,7 +790,7 @@ function copyCite(btn) {
     setTimeout(() => btn.textContent = 'Copy', 2000);
   });
 }
- 
+
 // Animated counters
 function animCount(el, target, dur) {
   let start = null;
@@ -911,7 +804,7 @@ function animCount(el, target, dur) {
   }
   requestAnimationFrame(step);
 }
- 
+
 const counters = document.querySelectorAll('[data-count]');
 const cObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -922,7 +815,7 @@ const cObs = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.5 });
 counters.forEach(el => cObs.observe(el));
- 
+
 // Scroll reveal
 const revEls = document.querySelectorAll('.reveal');
 const rObs = new IntersectionObserver(entries => {
@@ -938,5 +831,3 @@ revEls.forEach(el => rObs.observe(el));
 </script>
 </body>
 </html>
- 
-
