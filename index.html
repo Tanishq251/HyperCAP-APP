@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HyperCap — IEEE GRSM 2025</title>
+<title>HyperCap — IEEE GRSM 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -185,6 +185,8 @@ body::after{
 .lnk-paper:hover{background:#333}
 .lnk-code{background:var(--blue-pale);color:var(--blue);border:1px solid #b8caeb}
 .lnk-code:hover{background:#d8e4f4}
+.lnk-arxiv{background:var(--muted);color:#fff}
+.lnk-arxiv:hover{background:#5c5448}
 
 /* ─── AFFILS ─── */
 .affils-row{
@@ -517,7 +519,7 @@ footer a:hover{color:#fff}
 
 <!-- TOP BAR -->
 <div class="top-strip">
-  <span>IEEE Geoscience &amp; Remote Sensing Magazine</span>
+  <a href="https://ieeexplore.ieee.org/document/11550167/" target="_blank">IEEE Geoscience &amp; Remote Sensing Magazine</a>
   <span class="dot">·</span>
   <a href="https://arxiv.org/abs/2505.12217" target="_blank">arXiv:2505.12217</a>
   <span class="dot">·</span>
@@ -534,7 +536,7 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="accepted-pill">
       <span class="check">✓</span>
-      Accepted · IEEE Geoscience and Remote Sensing Magazine
+      Published · IEEE Geoscience and Remote Sensing Magazine (2026)
     </div>
 
     <h1>
@@ -560,8 +562,11 @@ footer a:hover{color:#fff}
       <div class="equal-note">* Equal contribution &nbsp;·&nbsp; † Corresponding authors</div>
     </div>
     <div class="links-col">
-      <a href="https://arxiv.org/abs/2505.12217" class="lnk lnk-paper" target="_blank">
-        📄 Paper
+      <a href="https://ieeexplore.ieee.org/document/11550167/" class="lnk lnk-paper" target="_blank">
+        📄 IEEE Xplore
+      </a>
+      <a href="https://arxiv.org/abs/2505.12217" class="lnk lnk-arxiv" target="_blank">
+        📄 arXiv Preprint
       </a>
       <a href="https://github.com/arya-domain/HyperCap" class="lnk lnk-code" target="_blank">
         💻 Code &amp; Dataset
@@ -693,14 +698,12 @@ footer a:hover{color:#fff}
           <span>BibTeX</span>
           <button class="copy-btn" onclick="copyCite(this)">Copy</button>
         </div>
-        <div class="cite-body" id="bibtex">@article{das2025hyperspectral,
-  title   = {Hyperspectral image land cover captioning
-             dataset for vision language models},
-  author  = {Das, Aryan and Rachamalla, Tanishq and
-             Singh, Pravendra and Biswas, Koushik and
-             Verma, Vinay Kumar and Roy, Swalpa Kumar},
-  journal = {arXiv preprint arXiv:2505.12217},
-  year    = {2025}
+        <div class="cite-body" id="bibtex">@article{das2026hypercap,
+  title   = {HyperCap: A Hyperspectral Land-Cover Captioning Dataset for Vision--Language Models},
+  author  = {Das, Aryan and Rachamalla, Tanishq and Singh, Pravendra and Biswas, Koushik and Verma, Vinay Kumar and Garcia, Salvador and Plaza, Antonio and Roy, Swalpa Kumar},
+  journal = {IEEE Geoscience and Remote Sensing Magazine},
+  year    = {2026},
+  doi     = {10.1109/MGRS.2026.3693613}
 }</div>
       </div>
     </section>
@@ -720,15 +723,16 @@ footer a:hover{color:#fff}
       </nav>
     </div>
 
-    <!-- arXiv card -->
+    <!-- Publication card -->
     <div class="side-widget reveal">
-      <div class="side-label">Preprint</div>
+      <div class="side-label">Publication</div>
       <div class="arxiv-card">
-        <div class="id">arXiv · 2505.12217v3</div>
-        <div class="title">HyperCap: Hyperspectral Land Cover Captioning Dataset</div>
+        <div class="id">IEEE GRSM 2026</div>
+        <div class="title">HyperCap: A hyperspectral land-cover captioning dataset for vision–language models</div>
         <div class="meta">
-          cs.CV &nbsp;·&nbsp; Submitted May 2025<br>
-          Accepted: <strong style="color:var(--green)">IEEE GRSM</strong>
+          Published: June 2026<br>
+          DOI: <a href="https://doi.org/10.1109/MGRS.2026.3693613" target="_blank" style="color:var(--blue);text-decoration:none;">10.1109/MGRS.2026.3693613</a><br>
+          arXiv: <a href="https://arxiv.org/abs/2505.12217" target="_blank" style="color:var(--blue);text-decoration:none;">2505.12217</a>
         </div>
       </div>
     </div>
@@ -774,7 +778,8 @@ footer a:hover{color:#fff}
 <!-- FOOTER -->
 <footer>
   <strong>HyperCap</strong> · Hyperspectral Land Cover Captioning Dataset<br>
-  Accepted in <strong>IEEE Geoscience and Remote Sensing Magazine (GRSM)</strong> &nbsp;·&nbsp;
+  Published in <strong>IEEE Geoscience and Remote Sensing Magazine (GRSM) 2026</strong> &nbsp;·&nbsp;
+  <a href="https://ieeexplore.ieee.org/document/11550167/" target="_blank">IEEE Xplore</a> &nbsp;·&nbsp;
   <a href="https://arxiv.org/abs/2505.12217" target="_blank">arXiv:2505.12217</a> &nbsp;·&nbsp;
   <a href="https://github.com/arya-domain/HyperCap" target="_blank">GitHub</a>
 </footer>
