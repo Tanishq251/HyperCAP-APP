@@ -165,7 +165,16 @@ body::after{
   color:var(--ink);
   line-height:1.9;
 }
-.author-names b{font-weight:600}
+.author-names a{
+  color:var(--ink);
+  text-decoration:none;
+  font-weight:600;
+  transition:color .15s;
+}
+.author-names a:hover{
+  color:var(--blue);
+  text-decoration:underline;
+}
 .author-names sup{
   font-size:9px;
   color:var(--muted);
@@ -569,14 +578,14 @@ footer a:hover{color:#fff}
   <div class="authors-block">
     <div>
       <div class="author-names">
-        <b>Aryan Das</b><sup>*,1</sup>,&ensp;
-        <b>Tanishq Rachamalla</b><sup>*,2</sup>,&ensp;
-        <b>Pravendra Singh</b><sup>3</sup>,&ensp;
-        <b>Koushik Biswas</b><sup>4</sup>,&ensp;
-        <b>Vinay Kumar Verma</b><sup>5</sup>,&ensp;
-        <b>Salvador Garcia</b><sup>6</sup>,&ensp;
-        <b>Antonio Plaza</b><sup>†,7</sup>,&ensp;
-        <b>Swalpa Kumar Roy</b><sup>†,8</sup>
+        <a href="https://scholar.google.com/citations?user=G2CQdUImO7SwAAAAJ" target="_blank">Aryan Das</a><sup>*,1</sup>,&ensp;
+        <a href="https://scholar.google.com/citations?user=G-6mD5IAAAAJ" target="_blank">Tanishq Rachamalla</a><sup>*,2</sup>,&ensp;
+        <a href="https://sites.google.com/view/pravendra/" target="_blank">Pravendra Singh</a><sup>3</sup>,&ensp;
+        <a href="https://orcid.org/0000-0002-9818-8966" target="_blank">Koushik Biswas</a><sup>4</sup>,&ensp;
+        <a href="https://scholar.google.com/citations?user=W4y965sAAAAJ" target="_blank">Vinay Kumar Verma</a><sup>5</sup>,&ensp;
+        <a href="https://scholar.google.com/citations?user=dE4V9HwAAAAJ" target="_blank">Salvador Garcia</a><sup>6</sup>,&ensp;
+        <a href="https://sites.google.com/view/antonioplaza" target="_blank">Antonio Plaza</a><sup>†,7</sup>,&ensp;
+        <a href="https://swalpakumarroy.github.io/" target="_blank">Swalpa Kumar Roy</a><sup>†,8</sup>
       </div>
       <div class="equal-note">* Equal contribution &nbsp;·&nbsp; † Corresponding authors</div>
     </div>
