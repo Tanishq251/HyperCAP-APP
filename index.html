@@ -698,41 +698,81 @@
 
     /* ─── RESPONSIVE ─── */
     @media(max-width:720px) {
+      .wrap {
+        padding: 0 1rem;
+      }
+
+      .top-strip {
+        flex-direction: column;
+        gap: 0.35rem;
+        text-align: center;
+        padding: 12px 1rem;
+      }
+
+      .top-strip .dot {
+        display: none;
+      }
+
+      .hero-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+      }
+
+      .accepted-pill {
+        margin: 0 auto 1.5rem auto;
+      }
+
+      .hero-logo-placeholder {
+        display: block !important;
+        margin: 1.5rem auto 0 auto;
+        width: 140px;
+      }
+
       .body-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
       }
 
       .main-col {
         padding: 2rem 0;
-        border-right: none
+        border-right: none;
       }
 
       .side-col {
-        padding: 0 0 2rem;
+        padding: 2rem 0;
         border-top: 1px solid var(--rule);
-        position: static
+        position: static;
       }
 
       .authors-block {
         grid-template-columns: 1fr;
-        gap: 1rem
-      }
-
-      .stats-bar {
-        grid-template-columns: repeat(2, 1fr)
-      }
-
-      .sc:nth-child(2) {
-        border-right: none
-      }
-
-      .hero-spectrum {
-        display: none
+        gap: 1.5rem;
+        text-align: center;
       }
 
       .links-col {
         flex-direction: row;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sc:nth-child(2) {
+        border-right: none;
+      }
+
+      .sc:nth-child(1),
+      .sc:nth-child(2) {
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .hero-spectrum {
+        display: none;
       }
     }
   </style>
